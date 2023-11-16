@@ -1328,8 +1328,8 @@
                 "bronze": {
                     "to_fulfill": [
                         "QC.Acc",
-                        "QC.Lic",
-                        "QC.Doc"
+                        "QC.Doc",
+                        "QC.Lic"
                     ],
                     "missing": [
                         "QC.Doc"
@@ -1341,42 +1341,42 @@
                 },
                 "silver": {
                     "to_fulfill": [
-                        "QC.Lic",
                         "QC.Met",
-                        "QC.Acc",
                         "QC.Doc",
-                        "QC.Ver"
+                        "QC.Ver",
+                        "QC.Acc",
+                        "QC.Lic"
                     ],
                     "missing": [
-                        "QC.Doc",
-                        "QC.Met"
+                        "QC.Met",
+                        "QC.Doc"
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Lic",
-                        "QC.Ver"
+                        "QC.Ver",
+                        "QC.Lic"
                     ]
                 },
                 "gold": {
                     "to_fulfill": [
-                        "QC.Lic",
-                        "QC.Sty",
                         "QC.Met",
-                        "QC.Acc",
-                        "QC.Sec",
                         "QC.Doc",
-                        "QC.Ver"
+                        "QC.Ver",
+                        "QC.Sty",
+                        "QC.Acc",
+                        "QC.Lic",
+                        "QC.Sec"
                     ],
                     "missing": [
-                        "QC.Sec",
-                        "QC.Sty",
+                        "QC.Met",
                         "QC.Doc",
-                        "QC.Met"
+                        "QC.Sty",
+                        "QC.Sec"
                     ],
                     "fulfilled": [
                         "QC.Acc",
-                        "QC.Lic",
-                        "QC.Ver"
+                        "QC.Ver",
+                        "QC.Lic"
                     ]
                 }
             },
