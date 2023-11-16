@@ -1,62 +1,62 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/sqaaas-assessment-action:
-      branch: release/2.0.0
-      repo: https://github.com/EOSC-synergy/sqaaas-assessment-action
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-assessment-action:
+      branch: release/2.0.0
+      repo: https://github.com/eosc-synergy/sqaaas-assessment-action
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-pumpkin-numbat.sh
-        container: qc.acc_sunny-apricot-macaque
+        - /usr/bin/env sh .sqa/script.homey-lavender-setter.sh
+        container: qc.acc_sleepy-tomato-lemming
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-corn-dachsbracke.sh
-        container: qc.doc_boozy-aquamarine-armadillo
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+        - /usr/bin/env sh .sqa/script.skimpy-cinnabar-crab.sh
+        container: qc.doc_fuzzy-denim-dachsbracke
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-lilac-seahorse.sh
-        container: qc.doc_snappy-black-flamingo
-      github.com/EOSC-synergy/sqaaas-assessment-action markdownlint:
+        - /usr/bin/env sh .sqa/script.wheezy-cerulean-panda.sh
+        container: qc.doc_paltry-aquamarine-eleuth
+      github.com/eosc-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-flax-kiwi.sh
-        container: qc.doc_pretty-amethyst-fish
+        - /usr/bin/env sh .sqa/script.scaly-cream-newt.sh
+        container: qc.doc_woozy-olivine-tuatara
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action licensee:
+      github.com/eosc-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-taupe-mayfly.sh
-        container: qc.lic_tasty-white-dalmatian
+        - /usr/bin/env sh .sqa/script.woolly-denim-fowl.sh
+        container: qc.lic_baggy-myrtle-cichlid
   QC.Sec:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action bandit:
+      github.com/eosc-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-denim-cuttlefish.sh
-        container: qc.sec_slimy-xanthic-coati
+        - /usr/bin/env sh .sqa/script.sunny-asparagus-rabbit.sh
+        container: qc.sec_nippy-yellow-lemming
   QC.Sty:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action flake8:
+      github.com/eosc-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-pink-buffalo.sh
-        container: qc.sty_freaky-scarlet-mule
-      github.com/EOSC-synergy/sqaaas-assessment-action hadolint:
+        - /usr/bin/env sh .sqa/script.muggy-pear-opossum.sh
+        container: qc.sty_randy-brass-dollar
+      github.com/eosc-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cerise-peccary.sh
-        container: qc.sty_hazy-flax-bird
+        - /usr/bin/env sh .sqa/script.stinky-salmon-whale.sh
+        container: qc.sty_crabby-blue-scorpion
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
+      github.com/eosc-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-puce-lobster.sh
-        container: qc.ver_stuffy-cobalt-yak
+        - /usr/bin/env sh .sqa/script.chummy-fuchsia-angora.sh
+        container: qc.ver_trippy-harlequin-buffalo
 timeout: 5400
