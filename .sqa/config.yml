@@ -1,62 +1,62 @@
 config:
   credentials: []
   project_repos:
+    github.com/EOSC-synergy/sqaaas-assessment-action:
+      branch: feature/readme_badge
+      repo: https://github.com/EOSC-synergy/sqaaas-assessment-action
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/eosc-synergy/sqaaas-assessment-action:
-      branch: release/2.0.0
-      repo: https://github.com/eosc-synergy/sqaaas-assessment-action
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action git:
+      github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-lavender-setter.sh
-        container: qc.acc_sleepy-tomato-lemming
+        - /usr/bin/env sh .sqa/script.flaky-fuchsia-vulture.sh
+        container: qc.acc_stuffy-rose-stingray
   QC.Doc:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action find_doc_files.py:
+      github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skimpy-cinnabar-crab.sh
-        container: qc.doc_fuzzy-denim-dachsbracke
-      github.com/eosc-synergy/sqaaas-assessment-action git:
+        - /usr/bin/env sh .sqa/script.sickly-maroon-fly.sh
+        container: qc.doc_greasy-coral-insect
+      github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-cerulean-panda.sh
-        container: qc.doc_paltry-aquamarine-eleuth
-      github.com/eosc-synergy/sqaaas-assessment-action markdownlint:
+        - /usr/bin/env sh .sqa/script.gloppy-maroon-earwig.sh
+        container: qc.doc_tacky-seashell-ostrich
+      github.com/EOSC-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-cream-newt.sh
-        container: qc.doc_woozy-olivine-tuatara
+        - /usr/bin/env sh .sqa/script.bumpy-maroon-fowl.sh
+        container: qc.doc_zippy-tangerine-beetle
   QC.Lic:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action licensee:
+      github.com/EOSC-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.woolly-denim-fowl.sh
-        container: qc.lic_baggy-myrtle-cichlid
+        - /usr/bin/env sh .sqa/script.chummy-copper-catfish.sh
+        container: qc.lic_muzzy-lilac-tarantula
   QC.Sec:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action bandit:
+      github.com/EOSC-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.sunny-asparagus-rabbit.sh
-        container: qc.sec_nippy-yellow-lemming
+        - /usr/bin/env sh .sqa/script.muggy-flax-dachshund.sh
+        container: qc.sec_ugly-eggplant-antelope
   QC.Sty:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action flake8:
+      github.com/EOSC-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-pear-opossum.sh
-        container: qc.sty_randy-brass-dollar
-      github.com/eosc-synergy/sqaaas-assessment-action hadolint:
+        - /usr/bin/env sh .sqa/script.flimsy-orange-wolfhound.sh
+        container: qc.sty_cranky-amethyst-cat
+      github.com/EOSC-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.stinky-salmon-whale.sh
-        container: qc.sty_crabby-blue-scorpion
+        - /usr/bin/env sh .sqa/script.nerdy-plum-woodlouse.sh
+        container: qc.sty_lanky-cobalt-blue
   QC.Ver:
     repos:
-      github.com/eosc-synergy/sqaaas-assessment-action get_git_tags.py:
+      github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chummy-fuchsia-angora.sh
-        container: qc.ver_trippy-harlequin-buffalo
+        - /usr/bin/env sh .sqa/script.bluesy-smalt-urchin.sh
+        container: qc.ver_chewy-platinum-dog
 timeout: 5400
