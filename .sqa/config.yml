@@ -1,62 +1,62 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/sqaaas-assessment-action:
-      branch: release/2.0.0
-      repo: https://github.com/EOSC-synergy/sqaaas-assessment-action
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-assessment-action:
+      branch: release/2.0.0
+      repo: https://github.com/eosc-synergy/sqaaas-assessment-action
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.goopy-pumpkin-numbat.sh
-        container: qc.acc_sunny-apricot-macaque
+        - /usr/bin/env sh .sqa/script.flaky-red-whale.sh
+        container: qc.acc_nippy-silver-crab
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-corn-dachsbracke.sh
-        container: qc.doc_boozy-aquamarine-armadillo
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+        - /usr/bin/env sh .sqa/script.blurry-mauve-schnauzer.sh
+        container: qc.doc_freaky-black-woodpecker
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.pokey-lilac-seahorse.sh
-        container: qc.doc_snappy-black-flamingo
-      github.com/EOSC-synergy/sqaaas-assessment-action markdownlint:
+        - /usr/bin/env sh .sqa/script.stinky-pear-stoat.sh
+        container: qc.doc_bluesy-rose-bee
+      github.com/eosc-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-flax-kiwi.sh
-        container: qc.doc_pretty-amethyst-fish
+        - /usr/bin/env sh .sqa/script.stuffy-red-flounder.sh
+        container: qc.doc_woozy-cornflower-tiger
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action licensee:
+      github.com/eosc-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-taupe-mayfly.sh
-        container: qc.lic_tasty-white-dalmatian
+        - /usr/bin/env sh .sqa/script.breezy-thistle-flounder.sh
+        container: qc.lic_paltry-puce-stingray
   QC.Sec:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action bandit:
+      github.com/eosc-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.beady-denim-cuttlefish.sh
-        container: qc.sec_slimy-xanthic-coati
+        - /usr/bin/env sh .sqa/script.lousy-sapphire-zebu.sh
+        container: qc.sec_sickly-cardinal-fossa
   QC.Sty:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action flake8:
+      github.com/eosc-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.cheeky-pink-buffalo.sh
-        container: qc.sty_freaky-scarlet-mule
-      github.com/EOSC-synergy/sqaaas-assessment-action hadolint:
+        - /usr/bin/env sh .sqa/script.cozy-red-dhole.sh
+        container: qc.sty_slaphappy-auburn-squirt
+      github.com/eosc-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-cerise-peccary.sh
-        container: qc.sty_hazy-flax-bird
+        - /usr/bin/env sh .sqa/script.freaky-lemon-eel.sh
+        container: qc.sty_wiggy-saffron-labradoodle
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
+      github.com/eosc-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-puce-lobster.sh
-        container: qc.ver_stuffy-cobalt-yak
+        - /usr/bin/env sh .sqa/script.nippy-orchid-bandicoot.sh
+        container: qc.ver_queasy-black-giraffe
 timeout: 5400
