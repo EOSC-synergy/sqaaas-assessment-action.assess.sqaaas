@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-assessment-action &&
+cd github.com/EOSC-synergy/sqaaas-assessment-action &&
     flake8 .
 )

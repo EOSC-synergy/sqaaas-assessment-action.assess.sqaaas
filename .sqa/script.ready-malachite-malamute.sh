@@ -3,6 +3,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-assessment-action &&
-    find_doc_files.py --file_type all
+cd github.com/EOSC-synergy/sqaaas-assessment-action &&
+    licensee detect . --confidence 60 --json
 )
