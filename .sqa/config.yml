@@ -15,54 +15,54 @@ sqa_criteria:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.woozy-persimmon-goose.sh
-        container: qc.acc_grumpy-goldenrod-flamingo
+        - /usr/bin/env sh .sqa/script.lovely-malachite-retriever.sh
+        container: qc.acc_leaky-teal-goat
   QC.Doc:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-dandelion-rhinoceros.sh
-        container: qc.doc_breezy-saffron-tzu
+        - /usr/bin/env sh .sqa/script.gamy-indigo-chow.sh
+        container: qc.doc_hasty-seashell-iguana
       github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-brown-dragonfly.sh
-        container: qc.doc_homey-ruby-bombay
+        - /usr/bin/env sh .sqa/script.droopy-lemon-dalmatian.sh
+        container: qc.doc_skanky-mauve-rhinoceros
       github.com/eosc-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-buff-mongrel.sh
-        container: qc.doc_hasty-auburn-barnacle
+        - /usr/bin/env sh .sqa/script.greasy-ruby-oriole.sh
+        container: qc.doc_grumpy-indigo-binturong
   QC.Lic:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-malachite-mongrel.sh
-        container: qc.lic_snappy-silver-mist
+        - /usr/bin/env sh .sqa/script.shaky-corn-ocelot.sh
+        container: qc.lic_cranky-olivine-frise
   QC.Sec:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-myrtle-hyrax.sh
-        container: qc.sec_queasy-linen-tang
+        - /usr/bin/env sh .sqa/script.sloppy-teal-birman.sh
+        container: qc.sec_messy-lavender-chinook
   QC.Sty:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-tangerine-foxhound.sh
-        container: qc.sty_skinny-aqua-emu
+        - /usr/bin/env sh .sqa/script.wimpy-brown-seal.sh
+        container: qc.sty_lousy-olivine-lionfish
       github.com/eosc-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gimpy-rose-jaguar.sh
-        container: qc.sty_wheezy-rose-chamois
+        - /usr/bin/env sh .sqa/script.cheeky-bistre-panda.sh
+        container: qc.sty_wimpy-goldenrod-bear
   QC.Uni:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action pytest:
         commands:
-        - /usr/bin/env sh .sqa/script.lovely-wheat-maltese.sh
-        container: qc.uni_slimy-indigo-meerkat
+        - /usr/bin/env sh .sqa/script.frumpy-lilac-fish.sh
+        container: qc.uni_blurry-cerulean-ibis
   QC.Ver:
     repos:
       github.com/eosc-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-lavender-dragonfly.sh
-        container: qc.ver_squeaky-gamboge-eleuth
+        - /usr/bin/env sh .sqa/script.seedy-mustard-wallaby.sh
+        container: qc.ver_snippy-myrtle-olm
 timeout: 5400
