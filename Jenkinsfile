@@ -22,6 +22,7 @@ pipeline {
             }
             steps {
                 script {
+                    println(currentBuild.changeSets)
                     projectConfig = pipelineConfig(
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
