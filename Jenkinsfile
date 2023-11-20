@@ -17,6 +17,7 @@ pipeline {
                         changeset ".badge/*"
                         changeset ".report/*"
                         changeset "README.md"
+                        changeset ""
                     }
                 }
             }
