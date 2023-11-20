@@ -15,48 +15,48 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.whiny-corn-blue.sh
-        container: qc.acc_blurry-chartreuse-dachshund
+        - /usr/bin/env sh .sqa/script.pretty-periwinkle-tamarin.sh
+        container: qc.acc_chummy-amber-hound
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-maroon-zorse.sh
-        container: qc.doc_nippy-carmine-malamute
+        - /usr/bin/env sh .sqa/script.hazy-bronze-wallaby.sh
+        container: qc.doc_geeky-turquoise-chicken
       github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.messy-ochre-pig.sh
-        container: qc.doc_crappy-yellow-dollar
+        - /usr/bin/env sh .sqa/script.squeaky-vermilion-seal.sh
+        container: qc.doc_wimpy-lime-abyssinian
       github.com/EOSC-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-emerald-mammoth.sh
-        container: qc.doc_jumpy-cornflower-javanese
+        - /usr/bin/env sh .sqa/script.cloudy-burgundy-wallaby.sh
+        container: qc.doc_queasy-teal-reindeer
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.craggy-buff-mole.sh
-        container: qc.lic_boozy-asparagus-salamander
+        - /usr/bin/env sh .sqa/script.homey-firebrick-akbash.sh
+        container: qc.lic_squeaky-violet-eagle
   QC.Sec:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-rose-cockroach.sh
-        container: qc.sec_shabby-asparagus-dalmatian
+        - /usr/bin/env sh .sqa/script.shabby-lemon-raccoon.sh
+        container: qc.sec_homey-beige-dhole
   QC.Sty:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-bronze-buzzard.sh
-        container: qc.sty_flimsy-cerulean-hornet
+        - /usr/bin/env sh .sqa/script.foggy-magenta-lion.sh
+        container: qc.sty_ready-eggplant-raccoon
       github.com/EOSC-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-gamboge-opossum.sh
-        container: qc.sty_flaky-sangria-hippopotamus
+        - /usr/bin/env sh .sqa/script.slaphappy-ecru-chipmunk.sh
+        container: qc.sty_scanty-crimson-camel
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-azure-termite.sh
-        container: qc.ver_crappy-brass-orangutan
+        - /usr/bin/env sh .sqa/script.skanky-tomato-capybara.sh
+        container: qc.ver_wheezy-amaranth-tapir
 timeout: 5400
