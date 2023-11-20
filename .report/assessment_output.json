@@ -1,11 +1,11 @@
 {
     "meta": {
         "version": "2.10.0",
-        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/sqaaas-assessment-action.assess.sqaaas/release/2.0.0/.report/assessment_output.json"
+        "report_json_url": "https://raw.githubusercontent.com/eosc-synergy/sqaaas-assessment-action.assess.sqaaas/main/.report/assessment_output.json"
     },
     "repository": {
-        "tag": "release/2.0.0",
-        "commit_id": "02cf3ff9057e3c578ac062f0e7fc41ddbbd6f74e",
+        "tag": "main",
+        "commit_id": "5d924fef542e910d901d54618183df8233ddfe43",
         "name": "EOSC-synergy/sqaaas-assessment-action",
         "url": "https://github.com/EOSC-synergy/sqaaas-assessment-action",
         "avatar_url": "https://avatars.githubusercontent.com/u/57723286?v=4",
