@@ -24,14 +24,12 @@ pipeline {
             steps {
                 script {
                     println(currentBuild.changeSets.size())
-                    /*
                     projectConfig = pipelineConfig(
                         configFile: '.sqa/config.yml',
                         scmConfigs: [ localBranch: true ],
                         validatorDockerImage: 'eoscsynergy/jpl-validator:2.4.0'
                     )
                     buildStages(projectConfig)
-                    */
                 }
             }
             post {
