@@ -1,62 +1,62 @@
 config:
   credentials: []
   project_repos:
-    github.com/EOSC-synergy/sqaaas-assessment-action:
-      branch: release/2.0.0
-      repo: https://github.com/EOSC-synergy/sqaaas-assessment-action
     github.com/EOSC-synergy/sqaaas-tooling:
       branch: release/1.7.13
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/eosc-synergy/sqaaas-assessment-action:
+      branch: release/2.0.0
+      repo: https://github.com/eosc-synergy/sqaaas-assessment-action
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.pretty-periwinkle-tamarin.sh
-        container: qc.acc_chummy-amber-hound
+        - /usr/bin/env sh .sqa/script.nippy-violet-axolotl.sh
+        container: qc.acc_ugly-brown-bat
   QC.Doc:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
+      github.com/eosc-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.hazy-bronze-wallaby.sh
-        container: qc.doc_geeky-turquoise-chicken
-      github.com/EOSC-synergy/sqaaas-assessment-action git:
+        - /usr/bin/env sh .sqa/script.sunny-cardinal-meerkat.sh
+        container: qc.doc_foggy-khaki-wolverine
+      github.com/eosc-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.squeaky-vermilion-seal.sh
-        container: qc.doc_wimpy-lime-abyssinian
-      github.com/EOSC-synergy/sqaaas-assessment-action markdownlint:
+        - /usr/bin/env sh .sqa/script.squirrely-gold-akita.sh
+        container: qc.doc_freaky-rose-setter
+      github.com/eosc-synergy/sqaaas-assessment-action markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.cloudy-burgundy-wallaby.sh
-        container: qc.doc_queasy-teal-reindeer
+        - /usr/bin/env sh .sqa/script.gamy-tangerine-squid.sh
+        container: qc.doc_craggy-ecru-axolotl
   QC.Lic:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action licensee:
+      github.com/eosc-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.homey-firebrick-akbash.sh
-        container: qc.lic_squeaky-violet-eagle
+        - /usr/bin/env sh .sqa/script.sleazy-lavender-paradise.sh
+        container: qc.lic_pasty-auburn-oriole
   QC.Sec:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action bandit:
+      github.com/eosc-synergy/sqaaas-assessment-action bandit:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-lemon-raccoon.sh
-        container: qc.sec_homey-beige-dhole
+        - /usr/bin/env sh .sqa/script.beady-corn-alligator.sh
+        container: qc.sec_tacky-chartreuse-cow
   QC.Sty:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action flake8:
+      github.com/eosc-synergy/sqaaas-assessment-action flake8:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-magenta-lion.sh
-        container: qc.sty_ready-eggplant-raccoon
-      github.com/EOSC-synergy/sqaaas-assessment-action hadolint:
+        - /usr/bin/env sh .sqa/script.woolly-carmine-worm.sh
+        container: qc.sty_shabby-green-spider
+      github.com/eosc-synergy/sqaaas-assessment-action hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-ecru-chipmunk.sh
-        container: qc.sty_scanty-crimson-camel
+        - /usr/bin/env sh .sqa/script.fuzzy-cerise-bee.sh
+        container: qc.sty_gamy-razzmatazz-emu
   QC.Ver:
     repos:
-      github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
+      github.com/eosc-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.skanky-tomato-capybara.sh
-        container: qc.ver_wheezy-amaranth-tapir
+        - /usr/bin/env sh .sqa/script.pretty-olive-beetle.sh
+        container: qc.ver_snoopy-razzmatazz-bison
 timeout: 5400
