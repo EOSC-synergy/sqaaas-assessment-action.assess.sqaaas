@@ -15,28 +15,28 @@ sqa_criteria:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-ecru-drever.sh
-        container: qc.acc_wheezy-beige-greyhound
+        - /usr/bin/env sh .sqa/script.goopy-crimson-burmese.sh
+        container: qc.acc_trippy-beige-greyhound
   QC.Doc:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sloppy-chocolate-wildebeest.sh
-        container: qc.doc_flabby-silver-cassowary
+        - /usr/bin/env sh .sqa/script.woozy-gold-monster.sh
+        container: qc.doc_wimpy-blue-caracal
       github.com/EOSC-synergy/sqaaas-assessment-action git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-copper-grasshopper.sh
-        container: qc.doc_thirsty-green-snail
+        - /usr/bin/env sh .sqa/script.queasy-bronze-uguisu.sh
+        container: qc.doc_skinny-aqua-spider
   QC.Lic:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.nippy-cardinal-saola.sh
-        container: qc.lic_tacky-silver-anteater
+        - /usr/bin/env sh .sqa/script.lovely-lemon-lynx.sh
+        container: qc.lic_lousy-magenta-russel
   QC.Ver:
     repos:
       github.com/EOSC-synergy/sqaaas-assessment-action get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.lumpy-tangerine-bandicoot.sh
-        container: qc.ver_crabby-jade-labradoodle
+        - /usr/bin/env sh .sqa/script.shaky-grey-badger.sh
+        container: qc.ver_paltry-buff-gecko
 timeout: 5400
