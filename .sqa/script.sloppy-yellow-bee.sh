@@ -5,5 +5,5 @@
 
 (
 cd github.com/EOSC-synergy/sqaaas-assessment-action &&
-    pytest tests --json-report  --json-report-indent 4
+    pytest  --json-report  --json-report-indent 4
 )
