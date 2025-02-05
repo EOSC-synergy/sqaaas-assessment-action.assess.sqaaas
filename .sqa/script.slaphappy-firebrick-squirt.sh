@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/eosc-synergy/sqaaas-assessment-action &&
-    mdl --json  .
+cd github.com/EOSC-synergy/sqaaas-assessment-action &&
+    pytest  --json-report  --json-report-indent 4
 )
